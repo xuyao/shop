@@ -26,7 +26,7 @@
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/chihaodian/main/js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="../main/js/ajaxfileupload.js"></script>
 <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script> 
 <title>基本设置</title>
 

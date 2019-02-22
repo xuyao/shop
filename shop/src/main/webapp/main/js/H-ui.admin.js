@@ -1,4 +1,3 @@
-/*H-ui.admin.js v2.3.1 date:15:42 2015.08.19 by:guojunhui*/
 /*获取顶部选项卡总长度*/
 function tabNavallwidth(){
 	var taballwidth=0,
@@ -92,7 +91,7 @@ $(function(){
 		var show_nav=topWindow.find('#min_title_list');
 		show_nav.find('li').removeClass("active");
 		var iframe_box=topWindow.find('#iframe_box');
-		show_nav.append('<li class="active"><span data-href="'+href+'">'+titleName+'</span><i></i><em></em></li>');
+		show_nav.html('<li class="active"><span data-href="'+href+'">'+titleName+'</span><i></i><em></em></li>');
 		tabNavallwidth();
 		var iframeBox=iframe_box.find('.show_iframe');
 		iframeBox.hide();

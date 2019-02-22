@@ -25,6 +25,8 @@
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../main/js/ajaxfileupload.js"></script>
 <title>意见反馈</title>
 </head>
 <body>

@@ -75,7 +75,7 @@ public class GoodsCtrl extends StringUtil {
 //		try {
 //		goods_name = new String(goods_name.getBytes("iso8859-1"),"utf-8");
 
-		goods_name = java.net.URLDecoder.decode(goods_name,"utf-8") ;
+//		goods_name = java.net.URLDecoder.decode(goods_name,"utf-8") ;
 		map.put("goods_name", goods_name);
 		map.put("goods_img", goods_img);
 		map.put("goods_spe", goods_spe);

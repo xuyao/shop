@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
 <!DOCTYPE HTML>
 <html>
@@ -7,27 +6,25 @@
 <meta charset="utf-8">
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport"
-	content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="lib/html5.js"></script>
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
 <link href="css/H-ui.min.css" rel="stylesheet" type="text/css" />
-<link href="css/H-ui.admin.css" rel="stylesheet"
-	type="text/css" />
-<link href="lib/icheck/icheck.css" rel="stylesheet"
-	type="text/css" />
-<link href="lib/Hui-iconfont/1.0.1/iconfont.css"
-	rel="stylesheet" type="text/css" />
+<link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
+<link href="lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/chihaodian/main/js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="../main/js/ajaxfileupload.js"></script>
 <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script> 
 <title>基本设置</title>
 
@@ -138,27 +135,22 @@
 		$.ajaxFileUpload({
 					url : 'upload.html', //需要链接到服务器地址  
 					secureuri : false,
-					fileElementId : "file", //文件选择框的id属性  
-					dataType : 'text', //服务器返回的格式，可以是json  
-					success : function(rs) //相当于java中try语句块的用法  
-					{	
+					fileElementId : "file",
+					dataType : 'text',
+					success : function(rs){	
 						if (rs != "") {
 							$('#img').html("");
 							$('#img').append("<img src='"+rs+"' width='100' height='100'>");
 							$('#filepath').val(rs);
 						} else {
 							alert('失败');
-							//document.getElementById("msg"+m[1]).value="失败"; 
 						}
 					},
-					error : function(data, status, e) //相当于java中catch语句块的用法  
-					{alert('失败');
-						
+					error : function(data, status, e) {
+						alert('失败');
 					}
 				});
 	}
-
 	</script>	
-	
 </body>
 </html>

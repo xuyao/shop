@@ -19,7 +19,7 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close" 
 		p:driverClassName="com.mysql.jdbc.Driver"
-		p:url="jdbc:mysql://10.192.196.56:3306/chihaodian" 
+		p:url="jdbc:mysql://10.192.196.56:3306/chihaodian?useUnicode=true&amp;characterEncoding=UTF-8" 
 		p:username="chihaodian"
 		p:password="123456">
 	<property name="validationQuery">
